@@ -17,21 +17,27 @@
 				width: 50% !important;
 				max-width: 50% !important;
 				min-width: 50% !important;
+				position: relative !important; /* Wajib relative agar menjadi patokan koordinat kotak teks */
 			}
-			/* Membuat teks "Fluida Statis" & "Fluida Dinamis" berada tepat di tengah-tengah ubin */
-			#two.tiles article .major {
-				padding: 0 !important;
+			
+			/* Membuat kotak teks BENAR-BENAR berada di tengah-tengah ubin */
+			#two.tiles article header.major {
+				position: absolute !important; /* Memaksa kotak teks lepas dari posisi default template */
 				top: 50% !important;
 				left: 50% !important;
-				transform: translate(-50%, -50%) !important;
+				transform: translate(-50%, -50%) !important; /* Menarik titik tengah teks pas di as tengah ubin */
+				padding: 0 !important;
 				margin: 0 !important;
-				width: 100% !important;
+				width: 90% !important; /* Memberi sedikit ruang aman di kanan-kiri */
 				text-align: center !important;
+				z-index: 10 !important; /* Memastikan teks selalu berada di lapisan paling depan gambar */
 			}
+			
 			/* Menghilangkan efek garis bawah bawaan template agar teks lebih bersih di tengah */
-			#two.tiles article .major h3 a::after {
+			#two.tiles article header.major h3 a::after {
 				display: none !important;
 			}
+			
 			/* Agar tampilan tetap responsif dan otomatis menumpuk ke bawah saat dibuka di HP */
 			@media screen and (max-width: 768px) {
 				#two.tiles article {
