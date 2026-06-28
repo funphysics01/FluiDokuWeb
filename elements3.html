@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Tautan MathJax yang Benar untuk Membaca LaTeX -->
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/dist/tex-chtml.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -85,7 +88,9 @@
 													<li><strong>Skala Evaluasi:</strong> Menggunakan rentang nilai <strong>0 - 100</strong>.</li>
 													<li><strong>Mekanisme Hitung:</strong> Murni dihitung hanya dari jumlah soal fisika fluida yang dijawab dengan benar oleh siswa (dilihat dari data laporan <code>.csv</code>).</li>
 													<li><strong>Rumus Nilai:</strong>
-														$$ \text{Nilai} = \frac{\text{Jumlah Soal Benar}}{15} \times 100 $$
+														<div style="margin: 0.5rem 0; font-size: 1.1rem;">
+															$$ \text{Nilai} = \frac{\text{Jumlah Soal Benar}}{15} \times 100 $$
+														</div>
 													</li>
 													<li><strong>Catatan Guru:</strong> Skor game Sudoku (poin plus/minus) tidak memengaruhi nilai ini, sehingga hasilnya murni mencerminkan pemahaman kognitif fisika siswa.</li>
 												</ul>
