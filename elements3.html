@@ -41,7 +41,7 @@
 								<img src="banner.png" alt="" />
 							</span>
 							<header class="major">
-								<h1>Panduan Penskoran</h1>
+								<h1>Panduan Penskoran & Penilaian</h1>
 							</header>
 							<div class="content">
 							</div>
@@ -57,26 +57,37 @@
 									
 									<!-- Content -->
 										<div class="row">
-											<div class="col-4 col-12-medium">
+											<div class="col-3 col-12-medium">
 												<h3>Kotak Tanpa Soal HOT Fluida</h3>
 												<ul>	
-													<li>Angka benar skor +25</li>
-													<li>Angka salah skor -10</li>
+													<li><strong>Angka Benar:</strong> Mendapat <strong>+25 Poin</strong></li>
+													<li><strong>Angka Salah:</strong> Pengurangan <strong>-10 Poin</strong></li>
 												</ul>
 											</div>
-											<div class="col-4 col-12-medium">
-												<h3>Kotak dengan Soal HOT Fluida</h3>
+											<div class="col-3 col-12-medium">
+												<h3>🔥 Kotak dengan Soal HOTS</h3>
 												<ul>
-													<li>Jawaban soal benar, skor +50</li>
-													<li>Jawaban soal salah, skor -25 dan akan kehilangan kotak</li>
-													<li>Memilih tidak menjawab soal, tidak mendapatkan skor dan kotak</li>
+													<li><strong>Jawaban Benar:</strong> Mendapat <strong>+50 Poin</strong></li>
+													<li><strong>Jawaban Salah:</strong> Pengurangan <strong>-25 Poin</strong> dan kehilangan kotak.</li>
+													<li><strong>Melewati Soal:</strong> Tidak mendapat poin (0) dan kehilangan kotak.</li>
 												</ul>
 											</div>
-											<div class="col-4 col-12-medium">
-												<h3>Skor Kombo</h3>
+											<div class="col-3 col-12-medium">
+												<h3>✨ Bonus Kombo</h3>
 												<ul>
-													<li>Menjawab benar 2 kotak secara berturut-turut, skor +10</li>
-													<li>Menjawab benar 3 kotak atau lebih secara berturut-turut, skor +25</li>
+													<li><strong>2x Beruntun:</strong> Tambahan <strong>+10 Poin</strong> jika benar 2 kotak berturut-turut.</li>
+													<li><strong>3x Beruntun+:</strong> Tambahan <strong>+25 Poin</strong> jika benar 3 kotak atau lebih berturut-turut.</li>
+												</ul>
+											</div>
+											<div class="col-3 col-12-medium">
+												<h3>📊 Penilaian Guru (0-100)</h3>
+												<ul>
+													<li><strong>Skala Evaluasi:</strong> Menggunakan rentang nilai <strong>0 - 100</strong>.</li>
+													<li><strong>Mekanisme Hitung:</strong> Murni dihitung hanya dari jumlah soal fisika fluida yang dijawab dengan benar oleh siswa (dilihat dari data laporan <code>.csv</code>).</li>
+													<li><strong>Rumus Nilai:</strong>
+														$$ \text{Nilai} = \frac{\text{Jumlah Soal Benar}}{15} \times 100 $$
+													</li>
+													<li><strong>Catatan Guru:</strong> Skor game Sudoku (poin plus/minus) tidak memengaruhi nilai ini, sehingga hasilnya murni mencerminkan pemahaman kognitif fisika siswa.</li>
 												</ul>
 											</div>
 										</div>
@@ -87,6 +98,9 @@
 											<li><a href="landing.html" class="button primary small">Kembali ke Panduan</a></li>
 											<li><a href="generic.html" class="button primary small">Lanjut ke Permainan</a></li>
 										</ul>
+								</div>
+							</section>
+					</div>
 			</div>
 
 		<!-- Scripts -->
