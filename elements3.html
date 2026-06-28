@@ -6,6 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			window.MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']],
+					displayMath: [['$$', '$$'], ['\\[', '\\]']]
+				},
+				options: {
+					skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+				}
+			};
+		</script>
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/dist/tex-chtml.js"></script>
 	</head>
 	<body class="is-preload">
