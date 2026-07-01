@@ -6,18 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script>
-			window.MathJax = {
-				tex: {
-					inlineMath: [['$', '$'], ['\\(', '\\)']],
-					displayMath: [['$$', '$$'], ['\\[', '\\]']]
-				},
-				options: {
-					skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-				}
-			};
-		</script>
-		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/dist/tex-chtml.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -97,8 +85,13 @@
 													<li><strong>Skala Evaluasi:</strong> Menggunakan rentang nilai <strong>0 - 100</strong>.</li>
 													<li><strong>Mekanisme Hitung:</strong> Murni dihitung hanya dari jumlah soal fisika fluida yang dijawab dengan benar oleh siswa (dilihat dari data laporan <code>.csv</code>).</li>
 													<li><strong>Rumus Nilai:</strong>
-														<div style="margin: 0.5rem 0; font-size: 1.1rem;">
-															$$ \text{Nilai} = \frac{\text{Jumlah Soal Benar}}{15} \times 100 $$
+														<div style="display: flex; align-items: center; margin: 1.5rem 0; font-size: 1.15rem; font-weight: bold; justify-content: center; background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 6px;">
+															<span>Nilai = &nbsp;</span>
+															<div style="display: inline-flex; flex-direction: column; align-items: center; line-height: 1.2;">
+																<span style="border-bottom: 2px solid #ffffff; padding: 0 0.5rem; text-align: center; padding-bottom: 4px;">Jumlah Soal Benar</span>
+																<span style="padding: 0 0.5rem; text-align: center; padding-top: 4px;">15</span>
+															</div>
+															<span>&nbsp; × 100</span>
 														</div>
 													</li>
 													<li><strong>Catatan Guru:</strong> Skor game Sudoku (poin plus/minus) tidak memengaruhi nilai ini, sehingga hasilnya murni mencerminkan pemahaman kognitif fisika siswa.</li>
